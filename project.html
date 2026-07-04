@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramji Electrical & Hardware Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <img src="logo.img.jpg" alt="Logo">
+    </div>
+
+    <div class="header-content">
+        <h1>Ramji Electrical & Hardware Store</h1>
+        <p>All Types of Electrical & Hardware Items Available</p>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <p style="margin-top:15px; font-size:18px;">
+🛒 Cart :
+<span id="cart">0</span>
+</p>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="overlay">
+        <h2>Welcome to Ramji Electrical & Hardware Store</h2>
+        <p>Best Quality Products at Affordable Prices</p>
+
+        <div class="search-box">
+
+<input type="text" id="search" placeholder="Search Products...">
+
+<button onclick="searchProduct()">
+Search
+</button>
+
+</div>
+    </div>
+</section>
+
+<section class="categories">
+    <h2>Shop Categories</h2>
+
+    <div class="category-container">
+
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="">
+            <h3>Fans</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="">
+            <h3>LED Bulbs</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="">
+            <h3>Switches</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="">
+            <h3>MCB</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="">
+            <h3>Wires</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="">
+            <h3>Tools</h3>
+        </div>
+
+    </div>
+
+</section>
+<section class="products">
+
+    <h2>Featured Products</h2>
+
+    <div class="product-container">
+
+        <div class="product-card">
+            <span class="offer">20% OFF</span>
+            <img src="https://via.placeholder.com/200x180?text=Ceiling+Fan" alt="">
+            <h3>Ceiling Fan</h3>
+            <p class="price">₹1350</p>
+            <button onclick="addCart()">
+Add to Cart 🛒
+</button>
+        </div>
+
+        <div class="product-card">
+            <span class="offer">50% OFF</span>
+            <img src="https://via.placeholder.com/200x180?text=LED+Bulb" alt="">
+            <h3>LED Bulb</h3>
+            <p class="price">₹90</p>
+            <button onclick="addCart()">
+Add to Cart 🛒
+</button>
+        </div>
+
+        <div class="product-card">
+            <span class="offer">30% OFF</span>
+            <img src="https://via.placeholder.com/200x180?text=MCB" alt="">
+            <h3>MCB</h3>
+            <p class="price">₹300</p>
+            <button onclick="addCart()">
+Add to Cart 🛒
+</button>
+        </div>
+
+        <div class="product-card">
+            <span class="offer">25% OFF</span>
+            <img src="https://via.placeholder.com/200x180?text=Extension+Board" alt="">
+            <h3>Extension Board</h3>
+            <p class="price">₹450</p>
+            <button onclick="addCart()">
+Add to Cart 🛒
+</button>
+        </div>
+
+        <div class="product-card">
+            <span class="offer">15% OFF</span>
+            <img src="https://via.placeholder.com/200x180?text=Electric+Iron" alt="">
+            <h3>Electric Iron</h3>
+            <p class="price">₹899</p>
+            <button onclick="addCart()">
+Add to Cart 🛒
+</button>
+        </div>
+
+        <div class="product-card">
+            <span class="offer">40% OFF</span>
+            <img src="https://via.placeholder.com/200x180?text=Mixer+Grinder" alt="">
+            <h3>Mixer Grinder</h3>
+            <p class="price">₹2199</p>
+            <button onclick="addCart()">
+Add to Cart 🛒
+</button>
+        </div>
+
+    </div>
+
+</section>
+<div class="product-card">
+
+<span class="offer">20% OFF</span>
+
+<img src="https://images.unsplash.com/photo-1617098474202-0d0d7f60b89f?w=500" alt="Fan">
+
+<div class="product-info">
+
+<h3>Crompton Ceiling Fan</h3>
+
+<div class="rating">
+⭐⭐⭐⭐☆
+</div>
+
+<p>
+<span class="old-price">₹1900</span>
+<span class="price">₹1350</span>
+</p>
+
+<button onclick="addCart()">
+Add to Cart 🛒
+</button>
+
+</div>
+
+</div>
+<script>
+
+let cart = 0;
+
+function addCart(){
+
+cart++;
+
+document.getElementById("cart").innerHTML = cart;
+
+alert("Product Added Successfully!");
+
+}
+
+function buyNow(){
+
+alert("Thank You For Shopping From Ramji Electrical & Hardware Store.");
+
+}
+
+function feedback(){
+
+alert("Thank You For Your Feedback.");
+
+}
+
+function searchProduct(){
+
+let product =
+document.getElementById("search").value;
+
+if(product==""){
+
+alert("Please Enter Product Name");
+
+}
+
+else{
+
+alert("Searching for : " + product);
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>
+</body>
